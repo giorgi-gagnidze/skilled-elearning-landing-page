@@ -1,0 +1,291 @@
+/* Style reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colors */
+
+:root {
+  --gray-blue: hsl(234, 25%, 52%);
+  --dark-blue: hsl(233, 54%, 16%);
+  --gray: hsl(232, 10%, 56%);
+  --red: hsl(341, 92%, 62%);
+  --pink: hsl(341, 100%, 83%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Plus Jakarta Sans", "Sans Serif";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+
+.main-container {
+  width: 375px;
+  padding: 16px 16px 0 16px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 38px;
+}
+
+.main-logo {
+  width: 89px;
+}
+
+.main-btn-header {
+  width: 140px;
+  height: 48px;
+  background-color: var(--dark-blue);
+  border: none;
+  border-radius: 28px;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.main-heading {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 50px;
+  color: var(--dark-blue);
+  margin-bottom: 26px;
+}
+
+.main-article {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+.main-btn {
+  width: 167px;
+  height: 56px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border: none;
+  border-radius: 31.5px;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26p x;
+}
+
+.hero-img-container {
+  background-image: url(../assets/image-hero-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 327px;
+  height: 301px;
+}
+
+.secont-article {
+  padding: 24px 29px 32px 28px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 10px;
+}
+
+.second-article-text {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--white);
+}
+
+/* Cards */
+
+.card {
+  width: 343px;
+  height: 259px;
+  background-color: var(--white);
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  border-radius: 10px;
+  margin-top: 40px;
+  position: relative;
+  padding: 0 29px 0 28px;
+}
+
+.card-inside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: -28px 0;
+  padding: 0 29px 0 28px;
+}
+
+.card-img {
+  margin-bottom: 28px;
+}
+
+.card-heading {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--dark-blue);
+  margin-bottom: 16px;
+}
+
+.card-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+.txt-btn {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--red);
+  border: none;
+  background: none;
+  margin-top: 199px;
+}
+
+/* Footer */
+
+.main-footer {
+  background-color: var(--dark-blue);
+  /* width: 350px; */
+  height: 120px;
+  margin-top: 80px;
+}
+
+.inside-footer {
+  width: 350px;
+  background-color: var(--dark-blue);
+  /* width: 350px; */
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.main-btn-footer {
+  width: 140px;
+  height: 48px;
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  border: none;
+  border-radius: 28px;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+  }
+  .main-container {
+    background-image: url(../assets/image-hero-tablet.png);
+    background-repeat: no-repeat;
+    background-position: right -300px top -110px;
+    width: 768px;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 5;
+  }
+
+  .grid-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .grid-item-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .main-article-container {
+    display: flex;
+  }
+
+  .article-container {
+    width: 398px;
+  }
+
+  .hero-img-container {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: bottom -70px left -50px;
+    background-size: 200%;
+    height: 401px;
+    margin-bottom: 123px;
+    width: 300px;
+    position: relative;
+  }
+
+  .grid-item-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .secont-article {
+    width: 343px;
+    height: 259px;
+    margin-top: 40px;
+  }
+
+  .inside-footer {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-container {
+    background-image: url(../assets/image-hero-desktop.png);
+    background-position: right -300px top -100px;
+    background-size: 70%;
+    width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(60px, 4, 1fr);
+  }
+  .hero-img-container {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: bottom -70px left -50px;
+    background-size: 200%;
+    height: 401px;
+    margin-bottom: 123px;
+    width: 300px;
+    position: relative;
+  }
+
+  .main-header {
+    margin-bottom: 170px;
+    /* height: 56px; */
+  }
+
+  .grid-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .inside-footer {
+    width: 1200px;
+  }
+
+  .card {
+    width: 350px;
+    height: 320px;
+  }
+
+  .secont-article {
+    width: 350px;
+    height: 320px;
+  }
+}
