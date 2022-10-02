@@ -30,5 +30,5 @@ It was really hard to work on this page, because I have still little practice. I
 
 ## Author
 
-- Website - siduki - https://github.com/siduki/skilled-elearning-landing-page
+- Website - siduki - https://github.com/siduki
 
