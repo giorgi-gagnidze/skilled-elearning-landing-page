@@ -54,6 +54,11 @@ body {
   line-height: 28px;
 }
 
+.main-btn-header:hover {
+  background-color: #666ca3;
+  cursor: pointer;
+}
+
 .main-heading {
   font-size: 40px;
   font-weight: 800;
@@ -80,6 +85,16 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 26p x;
+}
+
+.main-btn:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  cursor: pointer;
 }
 
 .hero-img-container {
@@ -185,6 +200,16 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 28px;
+}
+
+.main-btn-footer:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 800px) {
